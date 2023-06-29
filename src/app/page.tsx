@@ -32,7 +32,9 @@ export default function Home() {
   return (
     <ChakraProvider theme={theme}>
       <QueryClientProvider client={queryClient}>
-        <Flex flexDirection={"column"}></Flex>
+        <Flex flexDirection={"column"}>
+          <RegisterUsers />
+        </Flex>
       </QueryClientProvider>
     </ChakraProvider>
   );
