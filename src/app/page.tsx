@@ -1,8 +1,5 @@
 "use client";
 
-import RegisterUsers from "@/components/RegisterUsers";
-import TesteForm from "@/components/TesteForm";
-
 import {
   ChakraProvider,
   Flex,
@@ -32,9 +29,7 @@ export default function Home() {
   return (
     <ChakraProvider theme={theme}>
       <QueryClientProvider client={queryClient}>
-        <Flex flexDirection={"column"}>
-          <RegisterUsers />
-        </Flex>
+        <Flex flexDirection={"column"}></Flex>
       </QueryClientProvider>
     </ChakraProvider>
   );
